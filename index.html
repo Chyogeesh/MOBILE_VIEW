@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Interface</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        .header, .sales-banner, .main-menu { padding: 20px; text-align: center; }
+        .header { display: flex; align-items: center; justify-content: space-between; background: #222; color: #fff; }
+        .header .user-info { display: flex; align-items: center; }
+        .header img { border-radius: 50%; width: 40px; margin-right: 10px; }
+        .sales-banner { background: #f39c12; color: #fff; font-size: 1.2em; }
+        .main-menu button { display: block; width: 100%; margin: 10px 0; padding: 15px; font-size: 1.1em; }
+        .content { padding: 20px; }
+        .content h1 { font-size: 1.5em; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="user-info">
+            <img src="avatar.jpg" alt="User Avatar">
+            <div>
+                <div>Username</div>
+                <div>Rank: 10 | Gold: 1000</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sales-banner">
+        <p>Special Sale! Get 50% off on all items!</p>
+    </div>
+
+    <div class="main-menu">
+        <button onclick="location.href='play.html'">Play</button>
+        <button onclick="location.href='leaderboard.html'">Leaderboard</button>
+        <button onclick="location.href='rules.html'">Rules</button>
+        <button onclick="location.href='marketplace.html'">Marketplace</button>
+        <button onclick="location.href='profile.html'">User Profile</button>
+    </div>
+
+    <div class="content">
+        <!-- This section will change based on the page -->
+    </div>
+</body>
+</html>
